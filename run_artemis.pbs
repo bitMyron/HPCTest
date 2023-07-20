@@ -1,7 +1,7 @@
-#PBS -P <YOUR_PROJECT>
+#PBS -P brainfeat
 #PBS -l select=1:ncpus=4:ngpus=1:mem=8gb
 #PBS -l walltime=0:30:00
-#PBS -N job01
+#PBS -N monai_test
 
 module load singularity
 
