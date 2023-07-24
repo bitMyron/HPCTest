@@ -1,1 +1,2 @@
-sudo docker build . -t bitmayang/monai
+export DOCKER_TMP=/data/users/yang/HPC/docker/tmp
+sudo docker build . -t bitmayang/monai:1.2.0

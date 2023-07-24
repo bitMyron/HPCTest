@@ -16,7 +16,7 @@
 #singularity run --nv --bind /project:/project pytorch.img /bin/bash -c "cd "$PBS_O_WORKDIR" && python example_Unsupervised_surgery_pipeline_with_SCVI.py"
 
 # Pull base image.
-FROM projectmonai/monai
+FROM projectmonai/monai:1.2.0
 MAINTAINER Yang Ma USYD
 
 # Make the dir everything will go in
