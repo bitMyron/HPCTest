@@ -1,19 +1,9 @@
 #PBS -P brainfeat
-#PBS -l select=1:ncpus=4:ngpus=1:mem=8gb
+#PBS -l select=1:ncpus=4:ngpus=2:mem=8gb
 #PBS -l walltime=0:30:00
 #PBS -N monai_test
 
 module load singularity
-
 cd $PBS_O_WORKDIR
 
-### 1 BUILD IMAGE ###
-# First Build only - no GPU required, takes 30 mins, remove after ###
-# export SINGLUARITY_CACHEDIR=`pwd`
-# export SINGLUARITY_TMPDIR=`pwd`
-
-# singularity build pytorch.img docker://projectmonai/monai
-
-### 2 EXAMPLE WORKFLOW ###
-# Remove the build commands above and execute:
 singularity run --nv --bind /project:/project monai.img /bin/bash -c "cd "$PBS_O_WORKDIR" && python example_run.py"
