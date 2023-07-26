@@ -56,7 +56,7 @@ RUN conda install "imagecodecs"
 RUN conda install "tifffile"
 RUN conda install "pandas"
 RUN conda install "requests"
-RUN conda install "einops==0.4.1"
+RUN conda install -c conda-forge einops
 RUN conda install "transformers<4.22"
 RUN conda install "mlflow>=1.28.0"
 RUN conda install "matplotlib!=3.5.0"
