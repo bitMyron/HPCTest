@@ -46,7 +46,7 @@ RUN conda install "pyflakes"
 RUN conda install "black"
 RUN conda install "isort"
 RUN conda install -c conda-forge pytype
-RUN conda install "types-pkg_resources"
+RUN conda install -c conda-forge types-pkg_resources
 RUN conda install "mypy>=0.790"
 RUN conda install "ninja"
 RUN conda install "torchvision"
