@@ -73,8 +73,8 @@ RUN pip install nni
 RUN pip install optuna
 RUN pip install protobuf==3.19.0
 RUN pip install git+https://github.com/Project-MONAI/MetricsReloaded@monai-support#egg=MetricsReloaded
-RUN conda install "nipype==1.5.1"
-RUN conda install "wandb"
+RUN pip install nipype==1.5.1
+RUN pip install wandb
 
 RUN conda clean -a -y
 #RUN pip cache purge
