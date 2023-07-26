@@ -37,7 +37,7 @@ RUN conda install "lmdb"
 RUN conda install "flake8>=3.8.1"
 RUN conda install -c conda-forge flake8-bugbear
 RUN conda install -c conda-forge flake8-comprehensions
-RUN conda install -c conda-forge flake8-executable
+#RUN conda install -c conda-forge flake8-executable
 RUN conda install "pylint!=2.13"
 RUN conda install "mccabe"
 RUN conda install "pep8-naming"
