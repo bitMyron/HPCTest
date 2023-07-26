@@ -49,9 +49,8 @@ RUN conda install -c conda-forge pytype
 RUN conda install -c conda-forge types-pkg_resources
 RUN conda install "mypy>=0.790"
 RUN conda install "ninja"
-RUN conda install "torchvision"
 RUN conda install "psutil"
-RUN conda install "cucim==22.8.1"
+RUN pip install cucim==22.8.1
 RUN conda install "openslide-python==1.1.2"
 RUN conda install "imagecodecs"
 RUN conda install "tifffile"
