@@ -45,7 +45,7 @@ RUN conda install "pycodestyle"
 RUN conda install "pyflakes"
 RUN conda install "black"
 RUN conda install "isort"
-RUN conda install "pytype>=2020.6.1"
+RUN conda install -c conda-forge pytype
 RUN conda install "types-pkg_resources"
 RUN conda install "mypy>=0.790"
 RUN conda install "ninja"
