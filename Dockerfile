@@ -27,7 +27,7 @@ RUN conda install "coverage>=5.5"
 RUN conda install "parameterized"
 RUN conda install -c conda-forge gdown
 RUN conda install "scipy"
-RUN conda install "itk>=5.2"
+RUN conda install -c conda-forge itk
 RUN conda install "nibabel==3.1.1"
 RUN conda install "pillow!=8.3.0"
 RUN conda install "tensorboard>=2.6"
