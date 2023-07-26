@@ -51,7 +51,7 @@ RUN conda install "mypy>=0.790"
 RUN conda install "ninja"
 RUN conda install "psutil"
 RUN pip install cucim==22.8.1
-RUN conda install -c "conda-forge/label/broken" openslide-python
+RUN conda install -c conda-forge openslide-python
 RUN conda install "imagecodecs"
 RUN conda install "tifffile"
 RUN conda install "pandas"
