@@ -1,11 +1,11 @@
 # Pull base image.
-FROM nvidia/cuda:10.2-cudnn8-devel-ubuntu16.04
+FROM nbutter/pytorch:ubuntu1604
 MAINTAINER Yang Ma USYD BMC
 
 # Set up ubuntu dependencies
-RUN apt-get update -y && \
-  apt-get install -y wget git build-essential git curl libgl1 libglib2.0-0 libsm6 libxrender1 libxext6 && \
-  rm -rf /var/lib/apt/lists/*
+#RUN apt-get update -y && \
+#  apt-get install -y wget git build-essential git curl libgl1 libglib2.0-0 libsm6 libxrender1 libxext6 && \
+#  rm -rf /var/lib/apt/lists/*
 
 # Make the dir everything will go in
 WORKDIR /build
@@ -13,10 +13,10 @@ WORKDIR /build
 # Intall anaconda
 ENV PATH="/build/miniconda3/bin:${PATH}"
 ARG PATH="/build/miniconda3/bin:${PATH}"
-RUN curl -o miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh &&\
-	mkdir /build/.conda && \
-	bash miniconda.sh -b -p /build/miniconda3 &&\
-	rm -rf miniconda.sh
+#RUN curl -o miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh &&\
+#	mkdir /build/.conda && \
+#	bash miniconda.sh -b -p /build/miniconda3 &&\
+#	rm -rf miniconda.sh
 
 RUN conda --version
 
