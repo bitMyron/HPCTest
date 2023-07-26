@@ -59,8 +59,8 @@ RUN conda install "requests"
 RUN conda install -c conda-forge einops
 RUN conda install "transformers<4.22"
 RUN conda install "mlflow>=1.28.0"
-RUN #conda install -c conda-forge matplotlib
-RUN conda install "tensorboardX==2.1"
+RUN pip install matplotlib
+RUN pip install tensorboardX==2.1
 RUN conda install "types-PyYAML"
 RUN conda install "pyyaml"
 RUN conda install "fire"
