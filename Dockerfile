@@ -25,7 +25,7 @@ RUN conda install "numpy>=1.20"
 RUN conda install "setuptools>=50.3.0,<66.0.0,!=60.6.0"
 RUN conda install "coverage>=5.5"
 RUN conda install "parameterized"
-RUN conda install "gdown>=4.4.0"
+RUN conda install -c conda-forge gdown
 RUN conda install "scipy"
 RUN conda install "itk>=5.2"
 RUN conda install "nibabel==3.1.1"
