@@ -17,7 +17,7 @@ ARG PATH="/build/miniconda3/bin:${PATH}"
 #	mkdir /build/.conda && \
 #	bash miniconda.sh -b -p /build/miniconda3 &&\
 #	rm -rf miniconda.sh
-
+RUN conda update conda
 RUN conda --version
 
 RUN conda install pytorch==1.11 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=10.2 ignite==0.4.10 -c pytorch
