@@ -20,7 +20,7 @@ ARG PATH="/build/miniconda3/bin:${PATH}"
 
 RUN conda --version
 
-RUN conda install pytorch==1.13.1 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=10.2 -c pytorch
+RUN conda install pytorch==1.11 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=10.2 -c pytorch
 RUN conda install "numpy>=1.20"
 RUN conda install "setuptools>=50.3.0,<66.0.0,!=60.6.0"
 RUN conda install "coverage>=5.5"
