@@ -79,7 +79,7 @@ RUN pip install wandb
 RUN conda clean -a -y
 #RUN pip cache purge
 
-RUN mkdir /project /scratch && touch /usr/bin/nvidia-smi
+#RUN mkdir /project /scratch && touch /usr/bin/nvidia-smi
 
 CMD /bin/bash
 #
