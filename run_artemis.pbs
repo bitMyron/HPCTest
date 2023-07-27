@@ -1,9 +1,9 @@
 #PBS -P brainfeat
-#PBS -l select=1:ncpus=4:ngpus=2:mem=8gb
+#PBS -l select=1:ncpus=4:ngpus=1:mem=8gb
 #PBS -l walltime=0:30:00
-#PBS -N monai_test_v2
+#PBS -N monai_test
 
 module load singularity
 cd $PBS_O_WORKDIR
 
-singularity run --nv --bind /project:/project monai.img /bin/bash -c "cd "$PBS_O_WORKDIR" && python example_run.py"
+singularity run --nv --bind /project:/project monai_v1.img /bin/bash -c "cd "$PBS_O_WORKDIR" && python example_run.py"
