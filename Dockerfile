@@ -75,6 +75,7 @@ RUN pip install protobuf==3.19.0
 RUN pip install git+https://github.com/Project-MONAI/MetricsReloaded@monai-support#egg=MetricsReloaded
 RUN pip install nipype==1.5.1
 RUN pip install wandb
+RUN pip install timm
 
 RUN conda clean -a -y
 #RUN pip cache purge
